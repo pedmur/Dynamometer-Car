@@ -19,6 +19,7 @@ Tomas
 //GLOBAL VARIABLES
 //-------------------------------------------------------------------------------------------------
 // Calibrating the load cell
+#include <Arduino.h>
 #include "HX711.h"      
 
 // HX711 circuit wiring
