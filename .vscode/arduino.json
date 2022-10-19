@@ -1,6 +1,12 @@
 {
     "board": "arduino:avr:mega",
+<<<<<<< HEAD
     "port": "COM6",
     "programmer": "arduino:avrisp",
     "configuration": "cpu=atmega2560"
+=======
+    "programmer": "arduino:avrisp",
+    "configuration": "cpu=atmega2560",
+    "port": "COM3"
+>>>>>>> e5a6c3c5a17a90903a845aec83945f3b63c62b6d
 }
