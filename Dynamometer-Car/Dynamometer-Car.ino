@@ -11,22 +11,17 @@
 
 Authors:
 Pedro Mur
-Bram
-Tomas    
+Bram van Laarhoven
+Tomas Bolt
 */
+
+
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
 
 //-------------------------------------------------------------------------------------------------
 //GLOBAL VARIABLES
 //-------------------------------------------------------------------------------------------------
-// Calibrating the load cell
-#include <Arduino.h>
-#include <HX711.h>
-
-// HX711 circuit wiring
-const int LOADCELL_DOUT_PIN = 2;
-const int LOADCELL_SCK_PIN = 3;
-
-HX711 scale;
 
 
 //-------------------------------------------------------------------------------------------------
@@ -39,7 +34,21 @@ HX711 scale;
 //MAIN
 //-------------------------------------------------------------------------------------------------
 void setup(){
+  lcd.begin();
 
+
+  lcd.backlight();
+  lcd.clear();
+  lcd.setCursor(4, 0);
+  lcd.print("EXPO 1");
+  lcd.setCursor(0, 1);
+  lcd.print("Dynamometer Car");
+  lcd.setCursor(-4, 2);
+  lcd.print("Speed:");
+  lcd.setCursor(-4, 3);
+  lcd.print("HP:");
 }
 
-void loop(){}
+void loop(){
+        
+}
